@@ -8,7 +8,7 @@ event.on('abc', ()=>{
 });
 
 event.on('abc', ()=>{
-    var r = fs.writeFileSync('abc.txt', 'This is Event Exampe');
+    var r = fs.writeFileSync('abc.txt', 'This is Event Example');
     console.log('File Written');
 });
 
@@ -17,9 +17,10 @@ event.emit('abc');
 console.log("end");
 
 const os = require('os');
-// var x = 1024*1024*1024;
+ var x = 1024*1024*1024;
 // console.log(os.freemem()/x);
 const tfree = os.totalmem();
+console.log(tfree/x);
 console.log(os.hostname());
 console.log(os.platform());
 console.log(os.release());
