@@ -10,7 +10,7 @@ event.on('abc', ()=>{
 event.on('abc', ()=>{
     var r = fs.writeFileSync('abc.txt', 'This is Event Exampe');
     console.log('File Written');
-})
+});
 
 //Event Emit
 event.emit('abc');
